@@ -16,6 +16,7 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center|left"
@@ -270,131 +271,206 @@
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.6" />
+                    android:layout_weight="0.2" />
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="5.9"
-                    android:weightSum="5.6">
+                    android:layout_weight="6.7">
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:layout_margin="5dp">
-                        <RadioButton
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:gravity="center">
+
+                        <CheckBox
+                            android:id="@+id/mon"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="5dp"
                             android:layout_weight="1"
-                            android:button="@drawable/radio"/>
+                            android:background="@drawable/check"
+                            android:button="@null"
+                            android:elevation="3dp"
+                            android:gravity="center"
+                            android:onClick="mon"
+                            android:text="월" />
                     </LinearLayout>
+
                     <Space
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.2"/>
+                        android:layout_weight="0.1" />
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:layout_margin="5dp">
-                        <RadioButton
+                        android:layout_weight="1">
+
+                        <CheckBox
+                            android:id="@+id/tue"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="5dp"
                             android:layout_weight="1"
-                            android:button="@drawable/radio"/>
+                            android:background="@drawable/check"
+                            android:button="@null"
+                            android:elevation="3dp"
+                            android:gravity="center"
+                            android:onClick="tue"
+                            android:text="화" />
                     </LinearLayout>
+
                     <Space
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.2"/>
+                        android:layout_weight="0.1" />
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:layout_margin="5dp">
-                        <RadioButton
+                        android:layout_weight="1">
+
+                        <CheckBox
+                            android:id="@+id/wed"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="5dp"
                             android:layout_weight="1"
-                            android:button="@drawable/radio"/>
+                            android:background="@drawable/check"
+                            android:button="@null"
+                            android:elevation="3dp"
+                            android:gravity="center"
+                            android:onClick="wed"
+                            android:text="수" />
                     </LinearLayout>
+
                     <Space
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.2"/>
+                        android:layout_weight="0.1" />
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:layout_margin="5dp">
-                        <RadioButton
+                        android:layout_weight="1">
+
+                        <CheckBox
+                            android:id="@+id/thu"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="5dp"
                             android:layout_weight="1"
-                            android:button="@drawable/radio"/>
+                            android:background="@drawable/check"
+                            android:button="@null"
+                            android:elevation="3dp"
+                            android:gravity="center"
+                            android:onClick="thu"
+                            android:text="목" />
                     </LinearLayout>
+
                     <Space
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.2"/>
+                        android:layout_weight="0.1" />
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:layout_margin="5dp">
-                        <RadioButton
+                        android:layout_weight="1">
+
+                        <CheckBox
+                            android:id="@+id/fri"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="5dp"
                             android:layout_weight="1"
-                            android:button="@drawable/radio"/>
+                            android:background="@drawable/check"
+                            android:button="@null"
+                            android:elevation="3dp"
+                            android:gravity="center"
+                            android:onClick="fri"
+                            android:text="금" />
                     </LinearLayout>
+
                     <Space
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.2"/>
+                        android:layout_weight="0.1" />
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:layout_margin="5dp">
-                        <RadioButton
+                        android:layout_weight="1">
+
+                        <CheckBox
+                            android:id="@+id/sat"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="5dp"
                             android:layout_weight="1"
-                            android:button="@drawable/radio"/>
+                            android:background="@drawable/check"
+                            android:button="@null"
+                            android:elevation="3dp"
+                            android:gravity="center"
+                            android:onClick="sat"
+                            android:text="토" />
                     </LinearLayout>
+
                     <Space
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.2"/>
+                        android:layout_weight="0.1" />
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:layout_margin="5dp">
-                        <RadioButton
+                        android:layout_weight="1">
+
+                        <CheckBox
+                            android:id="@+id/sun"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="5dp"
                             android:layout_weight="1"
-                            android:button="@drawable/radio"/>
+                            android:background="@drawable/check"
+                            android:button="@null"
+                            android:elevation="3dp"
+                            android:gravity="center"
+                            android:onClick="sun"
+                            android:text="일" />
                     </LinearLayout>
-                    <Space
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"/>
+
+
                 </LinearLayout>
 
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.6"/>
+                    android:layout_weight="0.2" />
             </LinearLayout>
 
             <Space
@@ -405,14 +481,108 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.6">
+                android:layout_weight="0.6"
+                android:weightSum="10">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:gravity="center"
+                        android:text="하루동안"
+                        android:textColor="#000"
+                        android:textSize="11sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#395590"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:id="@id/hour"
+                            android:background="#fff" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="시간"
+                        android:textColor="#000"
+                        android:textSize="11sp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#395590"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:id="@+id/minute"
+                            android:background="#fff" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.7"
+                        android:gravity="center"
+                        android:text="분만큼 사용하겠습니다."
+                        android:textColor="#000"
+                        android:textSize="11sp" />
+                </LinearLayout>
 
             </LinearLayout>
-
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.9" />
+                android:layout_weight="0.2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:weightSum="10">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.5"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:shadowColor="#fff"
+                    android:text="확인"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:onClick="OK"
+                    android:textColor="#3e5c9b"/>
+
+            </LinearLayout>
         </LinearLayout>
 
         <Space

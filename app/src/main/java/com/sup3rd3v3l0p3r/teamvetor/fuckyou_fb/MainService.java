@@ -9,14 +9,23 @@ public class MainService extends Service {
     public void onCreate() {
         super.onCreate();
     }
+
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        new Thread(task).start();
         return super.onStartCommand(intent, flags, startId);
     }
+    Runnable task = new Runnable() {
+        @Override
+        public void run() {
+
+        }
+    };
     @Override
     public IBinder onBind(Intent intent) {
         return null;
     }
+
     @Override
     public void onDestroy() {
         super.onDestroy();
